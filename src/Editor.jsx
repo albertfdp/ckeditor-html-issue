@@ -35,7 +35,7 @@ function Editor({ onChange, onReady }) {
         "removeFormat",
       ],
       initialData:
-        "<p>Hello from CKEditor 5! <span data-name='example' class='test'></span> here test</p>",
+        '<p>Hello from CKEditor 5! <span class="test"></span> here test</p>',
       htmlSupport: {
         allowEmpty: ["span"],
         allow: [{ name: "span", classes: true }],
