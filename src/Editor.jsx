@@ -2,11 +2,9 @@ import { useMemo } from "react";
 
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import {
-  Bold,
   ClassicEditor,
   Essentials,
   GeneralHtmlSupport,
-  Italic,
   Paragraph,
   RemoveFormat,
 } from "ckeditor5";
@@ -17,23 +15,8 @@ function Editor({ onChange, onReady }) {
   const config = useMemo(() => {
     return {
       licenseKey: "GPL",
-      plugins: [
-        Essentials,
-        Paragraph,
-        Bold,
-        Italic,
-        GeneralHtmlSupport,
-        RemoveFormat,
-      ],
-      toolbar: [
-        "undo",
-        "redo",
-        "heading",
-        "|",
-        "bold",
-        "italic",
-        "removeFormat",
-      ],
+      plugins: [Essentials, Paragraph, GeneralHtmlSupport, RemoveFormat],
+      toolbar: ["removeFormat"],
       initialData:
         '<p>Hello from CKEditor 5! <span class="test"></span> here test</p>',
       htmlSupport: {
