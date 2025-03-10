@@ -2,6 +2,10 @@
 
 This repository demonstrates a specific bug in CKEditor 5 when using the [General HTML Support](https://ckeditor.com/docs/ckeditor5/latest/features/html/general-html-support.html) plugin together with the [Remove formatting](https://ckeditor.com/docs/ckeditor5/latest/features/remove-format.html) feature.
 
+You can see a video of the crash [here](https://drive.google.com/file/d/1mzhjdgmbDIH-PGqIcWDeWqbZdajCXJLh/view?usp=drive_link).
+
+## Reproduction
+
 The main issue occurs when:
 
 1. The editor is configured to allow empty <span> elements via the htmlSupport configuration
