@@ -11,10 +11,6 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-dev-utils": "^43.0.1",
-    "@ckeditor/ckeditor5-editor-decoupled": "^44.3.0",
-    "@ckeditor/ckeditor5-essentials": "^44.3.0",
-    "@ckeditor/ckeditor5-html-support": "^44.3.0",
     "@ckeditor/ckeditor5-react": "^9.5.0",
     "ckeditor5": "^44.3.0",
     "react": "^19.0.0",
