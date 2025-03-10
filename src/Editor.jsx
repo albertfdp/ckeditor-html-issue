@@ -12,12 +12,11 @@ import {
 } from "ckeditor5";
 
 import "ckeditor5/ckeditor5.css";
-import "ckeditor5-premium-features/ckeditor5-premium-features.css";
 
 function Editor({ onChange, onReady }) {
   const config = useMemo(() => {
     return {
-      licenseKey: import.meta.env.VITE_CKEDITOR_LICENSE_KEY,
+      licenseKey: "GPL",
       plugins: [
         Essentials,
         Paragraph,
